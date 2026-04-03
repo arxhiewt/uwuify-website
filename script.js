@@ -11,11 +11,7 @@ const sendBtn = document.getElementById('send-btn');
 const uwuBtnContainer = document.getElementById('uwuify-btn-container');
 const runBtn = document.getElementById('run-command');
 
-let demoStage = 0; // 0=waiting user, 1=ethan reply, 2=uwuify button ready, 3=uwuified ethan, 4=alexson67
-
-function uwuify(msg){
-    return msg.replace(/r|l/g,"w").replace(/R|L/g,"W").replace(/no/g,"nu").replace(/has/g,"haz")+" uwu";
-}
+let demoStage = 0;
 
 function getTimeStamp(){
     const d = new Date();
@@ -68,28 +64,33 @@ sendBtn.addEventListener('click',()=>{
             chatInput.value="";
             uwuBtnContainer.style.display="none";
             demoStage=3;
+
+            // Ultra uwufied messages, delayed one by one
             setTimeout(()=>{
                 addTyping("CoolEthan133");
                 setTimeout(()=>{
                     removeTyping();
-                    addMessage("CoolEthan133",uwuify("what is that?"),"uwu");
-                },1200);
-            },600);
+                    addMessage("CoolEthan133","w-watt is that (づ￣ ³￣)づ","uwu");
+                },2000);
+            },500);
+
             setTimeout(()=>{
                 addTyping("CoolEthan133");
                 setTimeout(()=>{
                     removeTyping();
-                    addMessage("CoolEthan133",uwuify("whatt thats so cool"),"uwu");
-                },1200);
-            },1600);
+                    addMessage("CoolEthan133","thats s-o kool! owo'","uwu");
+                },2000);
+            },3000);
+
             setTimeout(()=>{
                 addTyping("alexson67");
                 setTimeout(()=>{
                     removeTyping();
                     addMessage("alexson67","LMAOO","npc");
                     demoStage=4;
-                },1200);
-            },2800);
+                },2000);
+            },5500);
+
         } else {
             addMessage("You",msg,"user");
             chatInput.value="";
