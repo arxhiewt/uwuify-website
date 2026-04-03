@@ -10,7 +10,7 @@
 
 <!-- ANNOUNCEMENT BANNER -->
 <div class="announcement">
-⚠️ uwuify is temporarily disabled: Due to funky Discord rate limits this month, we are temporarily disabling uwuify. We will let you know when it's back up ASAP!
+uwuify is temporarily disabled. Due to Discord rate limits this month, the bot is temporarily offline. Updates will be posted when it's back.
 </div>
 
 <!-- NAVBAR -->
@@ -18,8 +18,9 @@
     <div class="logo">uwuify</div>
     <div class="nav-links">
         <a href="#demo">Demo</a>
-        <a href="#features">Features</a>
-        <a href="#docs">Docs</a>
+        <a href="#setup">Setup</a>
+        <a href="#commands">Commands</a>
+        <a href="#troubleshooting">Troubleshooting</a>
         <a href="#privacy">Privacy Policy</a>
     </div>
 </nav>
@@ -33,72 +34,68 @@
 
 <!-- DEMO CHAT -->
 <section id="demo">
-    <h2>Demonstration</h2>
+    <h2>Live Demo</h2>
     <div class="chat-box">
         <div id="chat-output">
-            <p class="system-msg">Welcome to the uwuify live demo! Run <code>/uwuify CoolEthan133</code> to uwuify his messages for 10 minutes.</p>
+            <p class="system-msg">Click the command below to uwuify CoolEthan133 for 10 minutes!</p>
+        </div>
+        <div class="chat-buttons">
+            <button id="run-command">/uwuify CoolEthan133</button>
         </div>
         <div class="chat-input-container">
             <input type="text" id="chat-input" placeholder="Type your message here..." disabled>
             <button id="send-btn" disabled>Send</button>
         </div>
     </div>
-    <p class="demo-note">This demo simulates how uwuify works in Discord. Messages from NPCs appear automatically after your uwuified messages!</p>
+    <p class="demo-note">This demo shows how uwuify transforms messages live.</p>
 </section>
 
-<!-- FEATURES -->
-<section id="features">
-    <h2>Features</h2>
-    <div class="grid">
-        <div class="card">⚡ Live message transformation in real-time</div>
-        <div class="card">🔗 Webhook powered channels</div>
-        <div class="card">🧠 Smart text effects & NPC commands</div>
-        <div class="card">🚀 Lightweight & fast</div>
-        <div class="card">🔒 Owner-only & role protections</div>
+<!-- IMPORTANT SETUP SECTION -->
+<section id="setup">
+    <h2>Important Setup Information</h2>
+    <p>uwuify requires the following permissions to function correctly:</p>
+    <ul>
+        <li>View Channels</li>
+        <li>Send Messages</li>
+        <li>Read Message History</li>
+        <li>Manage Messages</li>
+        <li>Manage Webhooks</li>
+    </ul>
+    <p>Only users with any of the following roles can run uwuify commands:</p>
+    <ul>
+        <li>Administrator</li>
+        <li>Ban Members</li>
+        <li>Kick Members</li>
+        <li>Timeout Members</li>
+    </ul>
+    <p>Ensure your roles include the permissions above. This protects your server and ensures only trusted members can use the bot.</p>
+</section>
+
+<!-- COMMANDS SECTION -->
+<section id="commands">
+    <h2>Commands</h2>
+    <div class="command">
+        <code>/uwuify &lt;user&gt;</code><button onclick="copyCommand('/uwuify @user')">Copy</button>
+    </div>
+    <div class="command">
+        <code>/webhook &lt;#channel&gt;</code><button onclick="copyCommand('/webhook #channel')">Copy</button>
+    </div>
+    <div class="command">
+        <code>/help</code><button onclick="copyCommand('/help')">Copy</button>
     </div>
 </section>
 
-<!-- DOCS -->
-<section id="docs">
-    <h2>Documentation</h2>
-
-    <div class="doc-card">
-        <h3>/uwuify &lt;user&gt;</h3>
-        <p>Transforms all messages of the mentioned user into uwu style for a set duration.</p>
-
-        <h3>/webhook &lt;#channel&gt;</h3>
-        <p>Sets the specified channel for live transformations via webhooks.</p>
-
-        <h3>/help</h3>
-        <p>Displays the full command list and usage instructions.</p>
-
-        <h3>Important Setup Information</h3>
-        <p>uwuify requires the following permissions to function correctly:</p>
-        <ul>
-            <li>View Channels</li>
-            <li>Send Messages</li>
-            <li>Read Message History</li>
-            <li>Manage Messages</li>
-            <li>Manage Webhooks</li>
-        </ul>
-
-        <p>Only users with any of the following roles can run uwuify commands:</p>
-        <ul>
-            <li>Administrator</li>
-            <li>Ban Members</li>
-            <li>Kick Members</li>
-            <li>Timeout Members</li>
-        </ul>
-
-        <p>Ensure any of your roles include the permissions above to run uwuify. This protects your server and ensures only trusted members can use the bot.</p>
-    </div>
+<!-- TROUBLESHOOTING SECTION -->
+<section id="troubleshooting">
+    <h2>Troubleshooting</h2>
+    <p>Instructions for bug fixes and common issues will appear here.</p>
 </section>
 
 <!-- PRIVACY POLICY -->
 <section id="privacy">
     <h2>Privacy Policy</h2>
     <p>
-        uwuify does not permanently store message content. User IDs and server IDs are temporarily stored for bot functionality. No data is sold or shared with third parties.
+        uwuify does not permanently store any user messages. User IDs and server IDs are temporarily stored for operational purposes. No user data is sold, shared, or distributed to third parties. By using uwuify, you consent to temporary processing necessary for bot functionality.
     </p>
 </section>
 
