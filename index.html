@@ -20,6 +20,7 @@ Uwuify is slowly being rolled out again! If you have any issues they will get au
         <a href="#demo">Demo</a>
         <a href="#setup">Setup</a>
         <a href="#commands">Commands</a>
+        <a href="#updates">Updates</a>
         <a href="#troubleshooting">Troubleshooting</a>
         <a href="#privacy">Privacy Policy</a>
     </div>
@@ -50,7 +51,7 @@ Uwuify is slowly being rolled out again! If you have any issues they will get au
     <p class="demo-note">Messages from Ethan and Alexson67 will appear. Your messages show as <b>You</b>.</p>
 </section>
 
-<!-- IMPORTANT SETUP SECTION -->
+<!-- SETUP -->
 <section id="setup">
     <h2>Important Setup Information</h2>
     <p>uwuify requires the following permissions to function correctly:</p>
@@ -61,6 +62,7 @@ Uwuify is slowly being rolled out again! If you have any issues they will get au
         <li>Manage Messages</li>
         <li>Manage Webhooks</li>
     </ul>
+
     <p>Only users with any of the following roles can run uwuify commands:</p>
     <ul>
         <li>Administrator</li>
@@ -68,34 +70,65 @@ Uwuify is slowly being rolled out again! If you have any issues they will get au
         <li>Kick Members</li>
         <li>Timeout Members</li>
     </ul>
+
     <p>Ensure your roles include the permissions above. This protects your server and ensures only trusted members can use the bot.</p>
 </section>
 
-<!-- COMMANDS SECTION -->
+<!-- COMMANDS -->
 <section id="commands">
     <h2>Commands</h2>
+
     <div class="command">
-        <code>/uwuify &lt;user&gt;</code><button onclick="copyCommand('/uwuify @user')">Copy</button>
+        <code>/uwuify &lt;user&gt;</code>
+        <button onclick="copyCommand('/uwuify @user')">Copy</button>
     </div>
+
     <div class="command">
-        <code>/webhook &lt;#channel&gt;</code><button onclick="copyCommand('/webhook #channel')">Copy</button>
+        <code>/webhook &lt;#channel&gt;</code>
+        <button onclick="copyCommand('/webhook #channel')">Copy</button>
     </div>
+
     <div class="command">
-        <code>/help</code><button onclick="copyCommand('/help')">Copy</button>
+        <code>/help</code>
+        <button onclick="copyCommand('/help')">Copy</button>
     </div>
 </section>
 
-<!-- TROUBLESHOOTING SECTION -->
+<!-- UPDATE LOG -->
+<section id="updates">
+    <h2>Update Log</h2>
+
+    <div class="update-log">
+
+        <div class="update-entry">
+            <span class="update-date">26 Apr 2026</span>
+            <p>Fixed Discord rate limit issues. Bot should remain stable.</p>
+        </div>
+
+        <div class="update-entry">
+            <span class="update-date">25 Apr 2026</span>
+            <p>Improved webhook handling and reduced delays.</p>
+        </div>
+
+        <div class="update-entry">
+            <span class="update-date">24 Apr 2026</span>
+            <p>Bot rollout resumed. Error logging system added.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- TROUBLESHOOTING -->
 <section id="troubleshooting">
     <h2>Troubleshooting</h2>
     <p>Instructions for bug fixes and common issues will appear here. Docs are still being created with full detail!</p>
 </section>
 
-<!-- PRIVACY POLICY -->
+<!-- PRIVACY -->
 <section id="privacy">
     <h2>Privacy Policy</h2>
     <p>
-        uwuify temporarily processes messages for live uwuification. Messages are deleted immediately after being sent. The only data stored temporarily is which users are currently uwufied; this data is removed automatically when the command ends or is manually removed. No permanent storage of messages, user IDs, or server information occurs.
+        uwuify temporarily processes messages for live uwuification. Messages are deleted immediately after being sent. The only data stored temporarily is which users are currently uwufied; this data is removed automatically when the command ends or manually removed. No permanent storage of messages, user IDs, or server information occurs.
     </p>
 </section>
 
